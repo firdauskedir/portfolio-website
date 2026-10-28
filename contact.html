@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Firdaus Kedir Abdella.">
+    <title>Contact | Firdaus Kedir</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Main navigation">
+        <a class="logo" href="index.html">FK<span>.</span></a>
+        <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="aboutMe.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a class="active" href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="page-hero container reveal">
+      <p class="eyebrow">GET IN TOUCH</p>
+      <h1>Let’s build something<br><em>useful together.</em></h1>
+      <p class="page-intro">I’m currently open to frontend, web design and UI/UX internship opportunities.</p>
+    </section>
+    <section class="contact-layout container section reveal">
+      <div class="contact-info">
+        <div class="contact-item">
+          <span>Email</span>
+          <a href="mailto:firdkedir345@gmail.com">firdkedir345@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <span>Phone</span>
+          <a href="tel:+251982122720">0982122720</a>
+        </div>
+        <div class="contact-item">
+          <span>GitHub</span>
+          <a href="https://github.com/firdauskedir" target="_blank" rel="noopener">github.com/firdauskedir ↗</a>
+        </div>
+        <div class="contact-item">
+          <span>Based in</span>
+          <p>Addis Ababa, Ethiopia</p>
+        </div>
+      </div>
+      <form class="contact-form" id="contact-form" novalidate>
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input id="name" name="name" autocomplete="name" required>
+          <small class="error" data-error-for="name"></small>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+          <small class="error" data-error-for="email"></small>
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+          <small class="error" data-error-for="message"></small>
+        </div>
+        <button class="btn btn-primary" type="submit">Send Message</button>
+        <p class="form-status" id="form-status" role="status"></p>
+      </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2026 Firdaus Kedir Abdella</p>
+      <a href("https://github.com/firdauskedir" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
